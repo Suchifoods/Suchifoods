@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Suchi Foods</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #fefefe;
+      padding: 0;
+      color: #222;
+    }
+    nav {
+      background: #ff7a00;
+      padding: 10px 100px 3px 60px ;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      color: white;
+      font-weight: 600;
+      font-size: 20px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 25px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+    .row input {
+      flex: 1;
+    }
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #ff7a00;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #e86e00;
+    }
+    .thank-you {
+      display: none;
+      text-align: center;
+      color: green;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    .social {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .social i {
+      font-size: 24px;
+      margin: 0 10px;
+      color: #555;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+    .social i:hover {
+      color: #ff7a00;
+    }
+    @media (max-width: 600px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+        <div class="logo">
+            <a href="Homepage.html">
+                <img src="Images/SuchiFoods Logo.png" alt="SuchiFoods Logo" width="100px">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Homepage.html">Dairy Foods</a></li>
+            <li><a href="Homepage.html">Our Story</a></li>
+            <li><a href="Homepage.html">Our Process</a></li>
+            <li><a href="Homepage.html">Mission & Vision</a></li>
+            <li><a href="Contact.html">Contact Us</a></li> <!-- ✅ Fixed this line -->
+        </ul>
+    </nav>
+
+  <!-- Contact Form Container -->
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <div class="row">
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="tel" name="contact" placeholder="Contact Number" required>
+      </div>
+      <div class="row">
+        <input type="text" name="product" placeholder="Required Product" required>
+        <input type="text" name="quantity" placeholder="Quantity" required>
+      </div>
+      <div class="row">
+        <input type="date" name="date" required>
+        <input type="tel" name="altcontact" placeholder="Alternate Contact">
+      </div>
+      <input type="text" name="address" placeholder="Address" required>
+      <textarea name="message" rows="3" placeholder="Message (Optional)"></textarea>
+      <button type="submit">Submit</button>
+      <div class="thank-you" id="thankYou">✅ THANK YOU FOR CHOOSING SUCHI FOODS</div>
+    </form>
+
+    <!-- Social Links -->
+    <div class="social">
+      <p>Follow us:</p>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("thankYou").style.display = "block";
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

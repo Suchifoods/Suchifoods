@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchi Foods - Fresh From Farm to You</title>
+    <link rel="stylesheet" href="Homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="Homepage.html">
+                <img src="Images/SuchiFoods Logo.png" alt="SuchiFoods Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="#dairyfoods">Suchi Products</a></li>
+            <li><a href="#content-video">Our Story</a></li>
+            <li><a href="#video-content">Our Process</a></li>
+            <li><a href="#mission-vision">Mission & Vision</a></li>
+            <li><a href="Contact.html">Contact Us</a></li> <!-- ✅ Fixed this line -->
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Video Slider -->
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide active">
+                <video autoplay muted loop class="hero-video">
+                    <source src="Images/Milk1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-text">
+                    <h2>Fresh Milk, Straight from the Farm</h2>
+                    <p>Delicious dairy delivered to your door in daily slots!</p>
+                    <a href="#dairyfoods" class="btn">Shop Now</a>
+                </div>
+            </div>
+            <div class="slide">
+                <video autoplay muted loop class="hero-video">
+                    <source src="images/Milk2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-text">
+                    <h2>Pure Dairy, Pure Joy</h2>
+                    <p>Explore our range of milk, curd, ghee, and more!</p>
+                    <a href="#dairyfoods" class="btn">Discover Products</a>
+                </div>
+            </div>
+            <div class="slide">
+                <video autoplay muted loop class="hero-video">
+                    <source src="images/HenBanner.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-text">
+                    <h2>Delicious Country Chicken and Goat Meat</h2>
+                    <p>Naturally grown and delivered fresh to your door!</p>
+                    <a href="#dairyfoods" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <img src="Images/Suchintro.png" width="200px" alt="Intro Logo" />
+        <h2>About Suchi Foods</h2>
+        <p class="text-center">At Suchi Foods, we are committed to delivering 100% natural and unadulterated dairy and farm-fresh products straight from local farms to your doorstep. Our offerings include fresh cow and buffalo milk, country eggs (Natukodi eggs), chicken, mutton, and seasonal fruits and traditional sweets — all produced using ethical and traditional farming practices.<br>
+        We source directly from small-scale farmers who avoid artificial feeding, harmful chemicals, preservatives, or additives. Every product we deliver is a promise of purity, health, and taste. Our mission is to build a healthier community by connecting people with farm-fresh goodness they can trust.<br>
+        With Suchi Foods, you don’t just buy food — you embrace a lifestyle rooted in freshness, tradition, and natural living.</p>
+        <p style="color: chocolate; font-size: larger; text-align:center;">We bring freshness to your doorstep, every day. Enjoy the taste of farm-fresh goodness!</p>
+    </section>
+
+    <!-- Dairy Foods Section -->
+    <section id="dairyfoods" class="products">
+        <h2>Our Dairy Foods</h2>
+        <div class="product-slider-container">
+            <div class="product-slider">
+                <div class="product-card">
+                    <img src="Images/traditional-sweets.jpg" alt="Special Sweets">
+                    <h3>Andhra Special Sweets</h3>
+                    <a href="Special_Sweets.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="Images/Fresh Milk.jpg" alt="Milk">
+                    <h3>Pure Milk & Products</h3>
+                    <a href="Our_Milk_Products.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="Images/Meat&Products.jpg" alt="Meat & Products">
+                    <h3>Fresh Meat & Products</h3>
+                    <a href="Our_Meat_Products.html" class="view-more">View More</a>
+                </div>
+                <div class="product-card">
+                    <img src="Images/Seasonal_Fruits.jpg" alt="Seasonal Fruits & Sweets">
+                    <h3>Seasonal Fruits & Sweets</h3>
+                    <a href="Seasonal_Fruits&Sweets.html" class="view-more">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content and Video Section -->
+    <section id="content-video" class="content-video">
+        <div class="content-video-container">
+            <div class="content">
+                <h2>About Our Special Sweets</h2>
+                <p>At Daily Dairy, we not only deliver pure dairy but also bring you special and traditional sweets made with love and authenticity. Our sweets are prepared using fresh milk and natural ingredients, preserving age-old recipes passed down through generations. We work closely with local sweet makers who maintain the traditional methods and flavors. From classic ghee sweets to festive favorites, every item reflects purity and tradition. No artificial flavors, no shortcuts—just real taste you can trust. Enjoy the richness of Indian culture in every bite, delivered fresh to your doorstep.</p>
+                <a href="#dairyfoods" class="btn">Explore Our Products</a>
+            </div>
+            <div class="video">
+                <video autoplay muted loop class="section-video">
+                    <source src="Images/SpeciaL_Sweets.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video and Content Section -->
+    <section id="video-content" class="video-content">
+        <div class="video-content-container">
+            <div class="video">
+                <video autoplay muted loop class="section-video">
+                    <source src="Images/FreshMilk_Products.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="content">
+                <h2>About Our Fresh Milk & Products</h2>
+                <p>Welcome to Daily Dairy, your trusted source for fresh and pure milk. We collect milk daily from healthy cows and buffaloes without adding any chemicals or preservatives. <b style="color: blueviolet;">Our aim is to provide 100% natural milk and milk products like curd, ghee, and cheese.</b> The milk is minimally processed to retain its natural taste and quality. We ensure hygienic handling and deliver in eco-friendly packaging. Choose your preferred delivery time – morning or evening. With Daily Dairy, experience farm-fresh goodness at your doorstep.</p>
+                <a href="Contact.html" class="btn">Explore Milk Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content and Video Section -->
+    <section class="content-video">
+        <div class="content-video-container">
+            <div class="content">
+                <h2>About Our Fresh Meat & Products</h2>
+                <p>At Daily Dairy, we extend our commitment to purity and quality by offering fresh meat and meat products like country eggs (Natukodi eggs) and a variety of dry fishes. We source directly from trusted local farmers and fishermen who follow traditional, sustainable practices.<b style="color: red;"> Currently, meat is available only once a week and primarily through bulk orders for apartments, gated communities, and family functions.</b> All products are handled hygienically and delivered fresh to maintain taste and safety. We ensure no artificial preservatives or chemicals are used. With Daily Dairy, enjoy farm-fresh meat you can trust, delivered with care.</p>
+                <a href="#dairyfoods" class="btn">Explore Our Products</a>
+            </div>
+            <div class="video">
+                <video autoplay muted loop class="section-video">
+                    <source src="images/Fresh_Meat.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video and Content Section -->
+    <section class="video-content">
+        <div class="video-content-container">
+            <div class="video">
+                <video autoplay muted loop class="section-video">
+                    <source src="images/Seasonal_fruits.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="content">
+                <h2>About Our Seasonal Products</h2>
+                <p>At Daily Dairy, we also offer a variety of seasonal sweets and fresh fruits to match the richness of each season. During summer, enjoy naturally ripened fruits like Mangoes, Jackfruit, Sapota (Chikoo) and more, straight from local farms. In winter, we bring you the best of Indian Jujube (Regu Pandu), Guavas, Oranges, Pomegranates, and other seasonal delights. Alongside these, we also prepare traditional sweets made specially for festivals and seasons using fresh, local ingredients. All our fruits are chemical-free, and sweets are freshly made with pure ghee and natural flavors. With Daily Dairy, taste the real flavor of each season, delivered fresh to your doorstep.</p>
+                <a href="Contact.html" class="btn">Explore Our Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission and Vision Section -->
+    <section id="mission-vision" class="mission-vision">
+        <h2>Our Mission & Vision</h2>
+        <div class="mission-vision-container">
+            <div class="mission">
+                <img src="Images/Our_Mission.jpeg" alt="Farm" class="mission-vision-img">
+                <h3>Our Mission</h3>
+                <p>To deliver pure, fresh, and natural products directly from local farmers to your doorstep. We aim to promote healthy living through unadulterated dairy, seasonal fruits, meats, and traditional sweets. By supporting small-scale farmers and artisans, we ensure quality and authenticity in every product. Our mission is to build trust with every delivery, rooted in tradition and purity.</p>
+            </div>
+            <div class="vision">
+                <img src="Images/Our_Vision.jpeg" alt="Community" class="mission-vision-img">
+                <h3>Our Vision</h3>
+                <p>To be a trusted name in every home for pure, farm-fresh products. We aim to deliver dairy, meat, fruits, and sweets directly from local farmers. Our focus is on natural living, sustainability, and traditional values. We strive to keep food real, honest, and rooted in our culture.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>Suchi Foods Farms, Hyderabad, Telangana, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: suchifoods25@gmail.com</p>
+                <p>Phone: +91 82470 60764</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer-bottom">© 2025 Suchi Foods. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // Close Hamburger Menu on Link Click
+        const navItems = document.querySelectorAll('.nav-links a');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Hero Video Slider
+        const slides = document.querySelectorAll('.slide');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+        }
+
+        prev.addEventListener('click', () => {
+            currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+            showSlide(currentSlide);
+        });
+
+        next.addEventListener('click', () => {
+            currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+            showSlide(currentSlide);
+        });
+
+        // Auto-slide every 5 seconds for Hero Slider
+        setInterval(() => {
+            currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+            showSlide(currentSlide);
+        }, 5000);
+
+        // Product Slider
+        const productSlider = document.querySelector('.product-slider');
+        const productCards = document.querySelectorAll('.product-card');
+        let currentProductSlide = 0;
+
+        const cardsToShow = () => window.innerWidth <= 768 ? 1 : window.innerWidth <= 1024 ? 2 : 3;
+
+        function showProductSlide(index) {
+            const cardWidth = productCards[0].offsetWidth + 20;
+            productSlider.style.transform = `translateX(-${index * cardWidth}px)`;
+        }
+
+        window.addEventListener('resize', () => {
+            showProductSlide(currentProductSlide);
+        });
+
+        // Cart Count Update
+        const cartCount = document.getElementById('cart-count');
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function updateCartCount() {
+            if (cartCount) {
+                cartCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
+            }
+        }
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Handle Hash on Page Load
+        window.addEventListener('load', () => {
+            if (window.location.hash) {
+                const targetId = window.location.hash.substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            updateCartCount();
+        });
+    </script>
+</body>
+</html>
